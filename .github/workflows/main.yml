@@ -16,7 +16,7 @@ jobs:
       - name: Accept Android licenses
         run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
       - name: Unzip project
-        run: unzip -o ServiceToolkit-android.zip
+        run:  unzip -o "ServiceToolkit-android 2.zip"
       - name: Build APK
         working-directory: ServiceToolkit
         run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon
